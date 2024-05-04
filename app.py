@@ -93,10 +93,10 @@ def logo_detection():
     )
 
     ### Adding in the Streamlit and Roboflow logos to the sidebar
-    image = Image.open("./images/roboflow_logo.png")
+    image = Image.open("./image/roboflow_logo.png")
     st.sidebar.image(image, use_column_width=True)
 
-    image = Image.open("./images/streamlit_logo.png")
+    image = Image.open("./image/streamlit_logo.png")
     st.sidebar.image(image, use_column_width=True)
 
     ### Setting up the url and query parameters for roboflow endpoint
@@ -109,7 +109,7 @@ def logo_detection():
     ## remove random part and add your secret key here
     ## Create a .streamlit/secrets.toml with the entry, replacing YourKey with the key from Roboflow: api_key="YourKey"
     ## Don't commit secrets.toml. On Sharing, add the same line to ☰ -> Settings -> Secrets
-    access_token = f'?api_key={st.secrets["api_key"]}'
+    access_token = f'?api_key={st.secrets["6B9Z89ozIbiHovfrwu4P"]}'
     format = "&format=json"
     headers = {"accept": "application/json"}
 
